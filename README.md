@@ -90,28 +90,79 @@ This is distinct from the break glass account, which is intentionally permanent 
 
 ## Screenshots
 
-| File | Description |
-|---|---|
-| `01_entra_test_users_created.png` | 5 named test users, break glass account, and admin account in the tenant |
-| `02_iam_test_users_group_membership.png` | IAM-Test-Users group with correct member population |
-| `03_security_defaults_enabled_before.png` | Security defaults enabled, before state |
-| `04_security_defaults_disabled_after.png` | Security defaults disabled, after state |
-| `05_ca01_mfa_policy_configuration.png` | CA01 built in Report only mode |
-| `06_ca01_signin_log_report_only_result.png` | CA01 Report only result against a real test sign in |
-| `07_ca01_policy_enabled_live.png` | CA01 switched to On |
-| `08_ca01_mfa_prompt_live.png` | Live MFA registration triggered by enforcement |
-| `09_ca01_signin_log_enforced_result.png` | CA01 enforced with a confirmed Success result |
-| `10_ca02_compliant_device_policy_configuration.png` | CA02 built, scoped to the test group |
-| `11_ca02_signin_log_report_only_result.png` | CA02 Report only result, documented limitation |
-| `12_ca03_risk_policy_configuration.png` | CA03 built with Medium and High risk conditions and Block access |
-| `13_named_location_configuration.png` | Trusted lab IP range defined as a Named Location |
-| `14_ca04_named_location_policy_configuration.png` | CA04 built with the trusted location exclusion |
-| `15_ca04_signin_log_report_only_result.png` | CA04 and CA03 both confirmed evaluating correctly from a trusted sign in |
-| `16_breakglass_signin_filter_configured.png` | Break glass account log filter, dormant baseline |
-| `17_breakglass_signin_detected.png` | Break glass sign in detected, proof of concept for CA05 |
-| `18_pim_eligible_assignment_configured.png` | Marcus Bell configured as Eligible for User Administrator via PIM |
-| `19_pim_role_activation_request.png` | Live role activation confirmed on the requesting user's Active assignments tab |
-| `20_pim_activation_confirmed.png` | Admin side confirmation of the active, time bound assignment |
+**Identity foundation**
+
+![5 named test users, break glass account, and admin account in the tenant](screenshots/01_entra_test_users_created.png)
+*5 named test users, break glass account, and admin account in the tenant*
+
+![IAM-Test-Users group with correct member population](screenshots/02_iam_test_users_group_membership.png)
+*IAM-Test-Users group with correct member population*
+
+![Security defaults enabled, before state](screenshots/03_security_defaults_enabled_before.png)
+*Security defaults enabled, before state*
+
+![Security defaults disabled, after state](screenshots/04_security_defaults_disabled_after.png)
+*Security defaults disabled, after state*
+
+**CA01, Require MFA for All Users**
+
+![CA01 built in Report only mode](screenshots/05_ca01_mfa_policy_configuration.png)
+*CA01 built in Report only mode*
+
+![CA01 Report only result against a real test sign in](screenshots/06_ca01_signin_log_report_only_result.png)
+*CA01 Report only result against a real test sign in*
+
+![CA01 switched to On](screenshots/07_ca01_policy_enabled_live.png)
+*CA01 switched to On*
+
+![Live MFA registration triggered by enforcement](screenshots/08_ca01_mfa_prompt_live.png)
+*Live MFA registration triggered by enforcement*
+
+![CA01 enforced with a confirmed Success result](screenshots/09_ca01_signin_log_enforced_result.png)
+*CA01 enforced with a confirmed Success result*
+
+**CA02, Require Compliant Device**
+
+![CA02 built, scoped to the test group](screenshots/10_ca02_compliant_device_policy_configuration.png)
+*CA02 built, scoped to the test group*
+
+![CA02 Report only result, documented limitation](screenshots/11_ca02_signin_log_report_only_result.png)
+*CA02 Report only result, documented limitation*
+
+**CA03, Block High Risk Sign-ins**
+
+![CA03 built with Medium and High risk conditions and Block access](screenshots/12_ca03_risk_policy_configuration.png)
+*CA03 built with Medium and High risk conditions and Block access*
+
+**CA04, Block Access Outside Trusted Locations**
+
+![Trusted lab IP range defined as a Named Location](screenshots/13_named_location_configuration.png)
+*Trusted lab IP range defined as a Named Location*
+
+![CA04 built with the trusted location exclusion](screenshots/14_ca04_named_location_policy_configuration.png)
+*CA04 built with the trusted location exclusion*
+
+![CA04 and CA03 both confirmed evaluating correctly from a trusted sign in](screenshots/15_ca04_signin_log_report_only_result.png)
+*CA04 and CA03 both confirmed evaluating correctly from a trusted sign in*
+
+**CA05, Break Glass Account Monitoring**
+
+![Break glass account log filter, dormant baseline](screenshots/16_breakglass_signin_filter_configured.png)
+*Break glass account log filter, dormant baseline*
+
+![Break glass sign in detected, proof of concept for CA05](screenshots/17_breakglass_signin_detected.png)
+*Break glass sign in detected, proof of concept for CA05*
+
+**Privileged Identity Management**
+
+![Marcus Bell configured as Eligible for User Administrator via PIM](screenshots/18_pim_eligible_assignment_configured.png)
+*Marcus Bell configured as Eligible for User Administrator via PIM*
+
+![Live role activation confirmed on the requesting user's Active assignments tab](screenshots/19_pim_role_activation_request.png)
+*Live role activation confirmed on the requesting user's Active assignments tab*
+
+![Admin side confirmation of the active, time bound assignment](screenshots/20_pim_activation_confirmed.png)
+*Admin side confirmation of the active, time bound assignment*
 
 ## Key Troubleshooting Moments
 
